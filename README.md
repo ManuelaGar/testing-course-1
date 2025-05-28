@@ -20,6 +20,21 @@ AAA principles:
 - Act
 - Assert
 
+```js
+describe('toUppercase', () => {
+  it('should return the uppercase of a valid string', () => {
+    // Arrange
+    const sut = toUpperCase
+    const expected = 'HELLO'
+
+    // Act
+    const actual = sut('hello')
+
+    // Assert
+    expect(actual).toBe(expected)
+  })
+})
+```
 Setup and teardown
 
 ## FIRST principles
